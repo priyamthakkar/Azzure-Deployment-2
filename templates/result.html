@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>MY FLASK APP</title>
+
+{% endblock %}
+
+<!--  -->
+
+{% block body %}
+
+<!-- <div class="container">
+  <h2>Results: </h2>
+  <img src="{{ image }}" alt="img">
+  
+  <div class="mx-auto card p-2"> 
+    <h2 class="">{{ prediction_text }}</h2>
+  </div>
+</div> -->
+<div class="container ">
+  <h1 class="display-6">Polyp Detection and Segmentation</h1>
+</div>
+
+<div class="container" style="width: 50%;">
+  <div class="card mx-auto" style="width: 50%;">
+    {% if prediction_text == "Polyp" %}
+    <img src="{{ image }}" class="card-img-top border" alt="subject-image" />
+    {% elif prediction_text == "Not Polyp" %}
+    <img src="{{ image }}" class="card-img-top border" alt="subject-image" style="display: none;" />
+    {% endif %}
+
+    <div class="card-body">
+      <h5 class="card-title">Results:</h5>
+      <p class="card-text" style="font-size: 2em;"><strong>{{ prediction_text }}</strong></p>
+      <a href="/" class="btn btn-warning">Check Another</a>
+    </div>
+  </div>
+</div>
+
+
+   
+
+
+{% endblock %}
