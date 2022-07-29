@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'PolypProject'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F80A33E5D3244241990BD30609915DA1 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6EB091842D5248EC96847298BC91C45B }}
