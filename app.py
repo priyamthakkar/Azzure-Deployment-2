@@ -6,6 +6,8 @@ import numpy as np
 from keras_preprocessing import image 
 from flask import request, jsonify
 from flask import Flask, render_template, url_for
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 import tensorflow as tf
 
 import random
