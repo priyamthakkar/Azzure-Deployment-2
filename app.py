@@ -3,7 +3,6 @@ from tensorflow.keras.models import Model
 from tensorflow.keras.models import load_model
 import numpy as np
 # import cv2
-from PIL import Image
 from keras_preprocessing import image 
 from flask import request, jsonify
 from flask import Flask, render_template, url_for
