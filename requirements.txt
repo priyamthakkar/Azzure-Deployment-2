@@ -2,3 +2,5 @@ Flask
 Keras_Preprocessing
 numpy
 tensorflow
+cupy-cuda110
+tensorflow-gpu
